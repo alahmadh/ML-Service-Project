@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: wine_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: winedb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d winedb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    container_name: wine_redis
+
+  backend:
+    build: .
+    container_name: wine_backend
+    command: >
+      sh -c "python init_db.py && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/winedb
+      - PYTHONPATH=/code
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  worker:
+    build: .
+    container_name: wine_worker
+    command: celery -A app.tasks.celery_app worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/winedb
+      - PYTHONPATH=/code
+    depends_on:
+      - redis
+      - db
+
+  dashboard:
+    build: ./dashboard
+    container_name: wine_dashboard
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+
+  prometheus:
+    image: prom/prometheus
+    container_name: wine_prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana
+    container_name: wine_grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+
+volumes:
+  postgres_data:

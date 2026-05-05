@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s 
+
+scrape_configs:
+  - job_name: 'wine-service'
+    static_configs:
+      - targets: ['wine_backend:8000'] 
