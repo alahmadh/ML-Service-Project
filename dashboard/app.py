@@ -26,7 +26,7 @@ def login_ui():
 
 if not st.session_state.token:
     login_ui()
-    st.title("🍷 Welcome to Wine Quality AI")
+    st.title("🍷 Welcome to Wine Quality Analysis")
     st.info("Please Login or Register from the sidebar to continue.")
 else:
     headers = {"Authorization": f"Bearer {st.session_state.token}"}
