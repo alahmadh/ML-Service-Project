@@ -84,5 +84,5 @@ http://localhost:8000/docs
 
 
 
-### Project Demo
+### Демонстрация проекта (Demo Video)
 **[Нажмите здесь, чтобы посмотреть демо-видео на Google Drive](https://drive.google.com/file/d/1g8VToCaesUqg5nn90Y_VK3n3tGrAJQcq/view?usp=sharing)**
