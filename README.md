@@ -84,7 +84,5 @@ http://localhost:8000/docs
 
 
 
-<img width="1920" height="1200" alt="‏‏لقطة الشاشة (373)" src="https://github.com/user-attachments/assets/50c9dc1e-a27e-4a21-8495-e0bc03ce4621" />
-
-<img width="1920" height="1200" alt="‏‏لقطة الشاشة (374)" src="https://github.com/user-attachments/assets/3e5a34f6-39b7-41c2-822f-b3dd73d882db" />
-
+### Project Demo
+**[Нажмите здесь, чтобы посмотреть демо-видео на Google Drive](https://drive.google.com/file/d/1g8VToCaesUqg5nn90Y_VK3n3tGrAJQcq/view?usp=sharing)**
