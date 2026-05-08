@@ -82,7 +82,9 @@ http://localhost:8000/docs
 
 Общее покрытие (Total Coverage): 74%
 
-
+###  Мониторинг (Grafana)
+Панель мониторинга настроена автоматически. Вы найдете её в разделе Dashboards под названием:
+`Wine Quality Monitoring`
 
 ### Демонстрация проекта (Demo Video)
 **[Нажмите здесь, чтобы посмотреть демо-видео на Google Drive](https://drive.google.com/file/d/1g8VToCaesUqg5nn90Y_VK3n3tGrAJQcq/view?usp=sharing)**
