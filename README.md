@@ -82,9 +82,7 @@ http://localhost:8000/docs
 
 Общее покрытие (Total Coverage): 74%
 
-<video src="https://github.com/alahmadh/ML-Service-Project/raw/main/video_2026-05-08_19-26-58.mp4" controls="controls" style="max-width: 100%;">
-  Your browser does not support the video tag.
-</video>
+
 
 <img width="1920" height="1200" alt="‏‏لقطة الشاشة (373)" src="https://github.com/user-attachments/assets/50c9dc1e-a27e-4a21-8495-e0bc03ce4621" />
 
