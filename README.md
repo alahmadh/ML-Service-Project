@@ -87,4 +87,4 @@ http://localhost:8000/docs
 `Wine Quality Monitoring`
 
 ### Демонстрация проекта (Demo Video)
-**[Нажмите здесь, чтобы посмотреть демо-видео на Google Drive](https://drive.google.com/file/d/1_9KEWJsmqjc5MLJAnyD5IXUzhX74khLS/view?usp=sharing)**
+**[Нажмите здесь, чтобы посмотреть демо-видео на Google Drive](https://drive.google.com/file/d/1L4EvzBgHCdk90Cew41ZdvlnsLjY_koZz/view?usp=sharing)**
