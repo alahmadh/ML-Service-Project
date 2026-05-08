@@ -57,8 +57,8 @@ Swagger UI:
 http://localhost:8000/docs
 
 * Клонирование репозитория
-`git clone https://github.com/alahmadh/ML-Service-Project.git`
-`cd ML-Service-Project`
+- `git clone https://github.com/alahmadh/ML-Service-Project.git`
+- `cd ML-Service-Project`
 
 * Запуск проекта через Docker
 
