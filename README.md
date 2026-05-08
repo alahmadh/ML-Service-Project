@@ -82,9 +82,6 @@ http://localhost:8000/docs
 
 Общее покрытие (Total Coverage): 74%
 
-<img width="1920" height="1200" alt="‏‏لقطة الشاشة (370)" src="https://github.com/user-attachments/assets/ee68b018-2bb6-4048-9574-9451c0e6f26c" />
-
-<img width="1920" height="1200" alt="‏‏لقطة الشاشة (371)" src="https://github.com/user-attachments/assets/42fec295-b701-49e7-8793-aa9ad1ea20f2" />
 
 <img width="1920" height="1200" alt="‏‏لقطة الشاشة (373)" src="https://github.com/user-attachments/assets/50c9dc1e-a27e-4a21-8495-e0bc03ce4621" />
 
