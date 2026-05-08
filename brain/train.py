@@ -16,4 +16,4 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(current_dir, 'model.pkl')
 joblib.dump(model, model_path)
 
-print(f"✅ The model has been successfully trained and saved at: {model_path}")
+print(f"The model has been successfully trained and saved at: {model_path}")
