@@ -79,6 +79,8 @@ http://localhost:8000/docs
 
 * Запуск тестов внутри контейнера
 `docker exec -it wine_backend pytest --cov=app`
+Или
+`docker-compose run --rm backend pytest`
 
 Общее покрытие (Total Coverage): 74%
 
