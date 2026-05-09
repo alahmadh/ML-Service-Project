@@ -80,11 +80,12 @@ http://localhost:8000/docs
 * Запуск тестов внутри контейнера
 `docker exec -it wine_backend pytest --cov=app`
 Или
-`docker-compose run --rm backend pytest`
+`docker-compose run --rm backend pytest --cov=app`
 
 Общее покрытие (Total Coverage): 74%
 
 ###  Мониторинг (Grafana)
+Имя пользователя: admin | Пароль: admin
 Панель мониторинга настроена автоматически. Вы найдете её в разделе Dashboards под названием:
 `Wine Quality Monitoring`
 
